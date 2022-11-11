@@ -15,9 +15,13 @@
       align-items: flex-end;
       justify-content: center;
       // float: left;
+      position: relative;
 
       img {
-        height: 90%;
+        height: 82%;
+        position: absolute;
+        left: 14px;
+        bottom: 7rem;
       }
     }
   }
