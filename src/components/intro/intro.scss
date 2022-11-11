@@ -1,0 +1,75 @@
+.intro {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  .left {
+    background-color: rgb(255, 255, 255);
+    flex: 0.5;
+    overflow: hidden;
+
+    .imageContainer {
+      width: 700px;
+      height: 700px;
+      background-color: crimson;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      // float: left;
+
+      img {
+        height: 90%;
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+    position: relative;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+        text-shadow: 1px 1px 4px #00000087;
+      }
+      h2 {
+        font-size: 35px;
+      }
+
+      .textTyped {
+      }
+      h3 {
+        font-size: 30px;
+      }
+      h2 {
+        height: 40px;
+        width: 15rem;
+        text-align: center;
+        font-size: 30px;
+        color: crimson;
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 18rem;
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0.2;
+        }
+      }
+    }
+  }
+}
