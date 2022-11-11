@@ -1,5 +1,3 @@
-import "./portfolioList.scss";
-
 const PortfolioList = ({title, selected, id, setSelected}) => {
 
     const handelSelectedItem = (id) =>{
