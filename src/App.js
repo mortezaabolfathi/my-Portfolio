@@ -1,6 +1,6 @@
 import Intro from "./components/intro/Intro";
 import Contact from "./components/contact/contact"
-import TestiMonials from "./components/testimonials/Testimonials"
+import Certificate from "./components/certificate/Certificate"
 import Works from "./components/works/Works";
 import Portfolio from "./components/portfolio/Portfolio";
 import TopBar from "./components/topBar/TopBar";
@@ -21,7 +21,7 @@ function App() {
         <Intro/>
         <Portfolio/>
         <Works/>
-        <TestiMonials/>
+        <Certificate/>
         <Contact/>
       </div>
 

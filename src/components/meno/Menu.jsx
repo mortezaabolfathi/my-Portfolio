@@ -13,7 +13,7 @@ const Menu = ({menuOpen, setMenuOpen}) => {
           <a href="#works">آثار</a>
         </li>
         <li onClick={()=>setMenuOpen(!menuOpen)}>
-          <a href="#testimonials">توصیفات</a>
+          <a href="#certificate">مدارک</a>
         </li>
         <li onClick={()=>setMenuOpen(!menuOpen)}>
           <a href="#contact">ارتباط با من</a>
