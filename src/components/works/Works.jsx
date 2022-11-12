@@ -7,7 +7,7 @@ const Work = () => {
 
   const handelClickSlide = (way)=>{
     if(way==="left"){
-      setCurrentSlide(currentSlide>0 ? currentSlide -1 : 2)
+      setCurrentSlide(currentSlide>0 ? currentSlide -1 : dataWorkList.length-1)
     }
     if(way==="right"){
       setCurrentSlide(currentSlide<dataWorkList.length - 1 ? currentSlide +1 : 0)
@@ -30,7 +30,9 @@ const Work = () => {
                     </div>
                     <h2>{dataWork.title}</h2>
                     <p>{dataWork.description}</p>
-                    <span>{dataWork.project}</span>
+                    <span>
+                      <a href={dataWork.link}>{dataWork.project}</a>
+                    </span>
                   </div>
                 </div>
               </div>
