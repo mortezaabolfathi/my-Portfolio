@@ -2,11 +2,11 @@ import Intro from "./components/intro/Intro";
 import Contact from "./components/contact/contact"
 import Certificate from "./components/certificate/Certificate"
 import Works from "./components/works/Works";
-import Portfolio from "./components/portfolio/Portfolio";
+import Skills from "./components/skills/Skills";
 import TopBar from "./components/topBar/TopBar";
 import "./style/app.scss"
 import { useState } from "react";
-import Menu from "./components/meno/Menu";
+import Menu from "./components/menu/Menu";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
       <Menu  menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections"> 
         <Intro/>
-        <Portfolio/>
+        <Skills/>
         <Works/>
         <Certificate/>
         <Contact/>
