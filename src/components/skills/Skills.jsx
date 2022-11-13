@@ -3,15 +3,16 @@ import "./skills.scss";
 import SkillsList from "./skillsList/SkillsList";
 import {
   AJAX,
-   Tools,
-   javascript,
-   CssLibraries,
-   TypeScript,
-   htmlCss,
-   reactJs,
-   WordPress
+  Tools,
+  javascript,
+  CssLibraries,
+  TypeScript,
+  htmlCss,
+  reactJs,
+  WordPress,
 } from "./skillsList/DataSkillsList";
 import { useEffect } from "react";
+import 'aos/dist/aos.css';
 
 const Skills = () => {
   const [selected, setSelected] = useState("جاوا اسکریپت");
@@ -44,9 +45,9 @@ const Skills = () => {
       title: " ابزارها",
     },
     {
-      id:"وردپرس",
-      title : "وردپرس"
-    }
+      id: "وردپرس",
+      title: "وردپرس",
+    },
   ];
 
   useEffect(() => {
@@ -55,29 +56,24 @@ const Skills = () => {
         setData(javascript);
         break;
       case "ری اکت":
-        console.log("react in ")
         setData(reactJs);
         break;
       case "HTML & CSS":
         setData(htmlCss);
         break;
       case "CSS Libraries":
-        console.log("CSS libraries")
         setData(CssLibraries);
         break;
       case "تایپ اسکریپت":
-        console.log("typeScript")
         setData(TypeScript);
         break;
       case "AJAX":
-        console.log("AJAX")
         setData(AJAX);
         break;
       case "ابزارها":
         setData(Tools);
         break;
       case "وردپرس":
-        console.log("wordPress")
         setData(WordPress);
         break;
       default:
@@ -102,15 +98,15 @@ const Skills = () => {
         })}
       </ul>
       <div className="container">
-        {data.map((d) => {
-          return (
-            <div className="item" key={d.id}>
-              <h3>{d.title}</h3>
-              <span>{d.description}</span>
-            </div>
-          );
-        })}
-      </div>
+      {data.map((d) => {
+        return (
+          <div className="item" key={d.id}>
+            <h3>{d.title}</h3>
+            <span>{d.description}</span>
+          </div>
+        );
+      })}
+    </div>
     </div>
   );
 };
