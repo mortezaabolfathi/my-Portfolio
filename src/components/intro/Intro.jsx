@@ -12,10 +12,10 @@ const Intro = () => {
           <h3>عاشق برنامه نویسی  </h3>
 
           <TypeAnimation
-            sequence={["javascript", 3000, "html/css", 3000, "front-end", 3000]}
+            sequence={["javascript", 3000, "front-end", 3000]}
             speed={9}
-            deletionSpeed={9}
-            wrapper="h2"
+            deletionSpeed={20}
+            wrapper="h1"
             repeat={Infinity}
           />
         </div>
