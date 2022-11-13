@@ -12,7 +12,6 @@ import {
   WordPress,
 } from "./skillsList/DataSkillsList";
 import { useEffect } from "react";
-import 'aos/dist/aos.css';
 
 const Skills = () => {
   const [selected, setSelected] = useState("جاوا اسکریپت");
