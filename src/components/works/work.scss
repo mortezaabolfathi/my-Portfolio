@@ -1,16 +1,23 @@
+@import "./../../style/global.scss";
 .works {
   background-color: crimson;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  
+
   .slider {
     height: 350px;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+
+    // @include mobile{
+    //   height: 100vh;
+    //   flex-direction: column;
+    //   justify-content: center;
+    // }
     .container {
       width: 100vw;
       display: flex;
@@ -27,6 +34,12 @@
         align-items: center;
         overflow: hidden;
 
+        @include mobile {
+          width: 250px;
+          height: 70%;
+          gap:19px
+        }
+
         .left {
           flex: 4;
           height: 100%;
@@ -34,13 +47,22 @@
           align-items: center;
           justify-content: center;
 
+          @include mobile {
+            display: block;
+            z-index: 1;
+          }
+
           .leftContainer {
             width: 90%;
             height: 70%;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
+
+            @include mobile {
+              height: 100%;
+            }
 
             .imgContainer {
               width: 40px;
@@ -51,6 +73,11 @@
               align-items: center;
               justify-content: center;
 
+              @include mobile {
+                display: none;
+               
+              }
+
               img {
                 width: 25px;
               }
@@ -58,6 +85,11 @@
 
             h2 {
               font-size: 30px;
+
+              @include mobile{
+                font-size: 20px;
+                color: crimson;
+              }
             }
 
             p {
@@ -69,6 +101,10 @@
               font-weight: 600;
               text-decoration: underline;
               cursor: pointer;
+
+              @include mobile{
+                font-size: 13px;
+              }
             }
           }
         }
@@ -82,6 +118,10 @@
             width: 100%;
             height: 131%;
             transform: rotate(-10deg);
+            @include mobile {
+              height: 100%;
+              transform: rotate(0deg);
+            }
           }
         }
       }
@@ -97,12 +137,20 @@
       position: absolute;
       right: 500px;
       transform: rotate(180deg);
+
+      @include mobile {
+        right: 8rem;
+        bottom: -2rem;
+      }
     }
 
     .right {
       position: absolute;
       left: 500px;
+
+      @include mobile {
+        left: 8rem;
+      }
     }
   }
-
 }
