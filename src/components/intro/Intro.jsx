@@ -19,7 +19,7 @@ const Intro = () => {
             repeat={Infinity}
           />
         </div>
-        <a href="portfolio">
+        <a href="skills">
           <img src="assets/down.png" alt="" />
         </a>
       </div>
