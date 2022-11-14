@@ -8,12 +8,22 @@
 
   h1 {
     font-size: 50px;
+    text-shadow: 2px 2px 4px #00000075;
+
+    @include mobile{
+      font-size: 27px;
+    }
   }
   ul {
     margin: 10px;
     padding: 0px;
     list-style: none;
     display: flex;
+
+    @include mobile{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
     li {
       font-size: 14px;
@@ -51,6 +61,12 @@
       color: white;
       position: relative;
       padding: 1rem;
+
+      @include mobile {
+        height: 140px;
+        overflow-y: scroll;
+        // padding-top: 40px;
+      }
       
       h3 {
         position: absolute;
@@ -59,6 +75,10 @@
       span {
         font-size: 20px;
         text-align: end;
+
+        @include mobile{
+          font-size: 13px;
+        }
       }
     }
   }
