@@ -32,7 +32,10 @@
         display: flex;
         align-items: center;
         gap: 0.25rem;
-
+        @include mobile{
+          display: none;
+        }
+      
         svg {
           padding-left: 2rem;
         }
