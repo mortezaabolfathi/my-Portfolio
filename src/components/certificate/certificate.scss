@@ -1,3 +1,4 @@
+@import "./../../style/global.scss";
 .certificate {
     background-color: #fffcfc;
     display: flex;
@@ -6,11 +7,27 @@
     justify-content: center;
     gap: 4rem;
 
+    @include mobile{
+      gap:0px
+    }
+
+    h1{
+      text-shadow: 2px 2px 4px rgb(0 0 0 / 46%);
+
+      @include mobile {
+        font-size: 27px;
+      }
+    }
+
   .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+     @include mobile{
+      flex-direction: column;
+     }
 
     div{
         display: flex;
@@ -26,6 +43,10 @@
         width: 80%;
         height: 80%;
         box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.452);
+
+        @include mobile{
+          width: 100%;
+        }
       }
     }
 
@@ -36,6 +57,10 @@
         width: 80%;
         height: 80%;
         box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.452);
+      
+        @include mobile{
+          width: 100%;
+        }
       }
     }
   }
