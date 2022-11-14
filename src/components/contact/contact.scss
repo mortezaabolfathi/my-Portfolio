@@ -1,3 +1,5 @@
+@import "./../../style/global.scss";
+
 .contact {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -11,6 +13,10 @@
     img {
       height: 70%;
     }
+
+    @include mobile{
+      display: none;
+    }
   }
   .right {
     flex: 1;
@@ -20,6 +26,11 @@
     justify-content: space-around;
     padding-right: 4rem;
 
+    @include mobile{
+      height: 100%;
+      padding: 1rem;
+    }
+
     .item-contact {
       width: 100%;
       display: flex;
@@ -27,9 +38,20 @@
       align-items: center;
       justify-content: space-between;
       gap: 2rem;
+
+      @include mobile{
+        flex-wrap: wrap;
+        gap: 0px;
+      }
+
       img {
            width: 41px;
            height: 41px;
+
+           @include mobile{
+            width: 35px;
+            height:37px;
+           }
        }
        a {
           font-size: 30px;
@@ -40,6 +62,10 @@
 
           &:hover{
             text-shadow: 0 0 3px rgb(240, 95, 95);
+          }
+
+          @include mobile{
+            font-size: 24px;
           }
       }
   }
