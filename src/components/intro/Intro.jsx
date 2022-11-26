@@ -34,4 +34,3 @@ const Intro = () => {
 
 export default Intro;
 
-// مقدمه

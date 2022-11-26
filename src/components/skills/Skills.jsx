@@ -18,10 +18,10 @@ const Skills = () => {
   const [data, setData] = useState([]);
 
   const list = [
-    { id: "جاوا اسکریپت", title: "جاوا اسکریپت" },
+    { id: "JavaScript", title: "JavaScript" },
     {
-      id: "ری اکت",
-      title: "ری اکت",
+      id: "ReactJs",
+      title: "ReactJs",
     },
     {
       id: "HTML & CSS",
@@ -32,29 +32,29 @@ const Skills = () => {
       title: "CSS Libraries",
     },
     {
-      id: "تایپ اسکریپت",
-      title: " تایپ اسکریپت ",
+      id: "TypeScript",
+      title: "TypeScript",
     },
     {
       id: "AJAX",
       title: " AJAX ",
     },
     {
-      id: "ابزارها",
-      title: " ابزارها",
+      id: "Tools",
+      title: "Tools",
     },
     {
-      id: "وردپرس",
-      title: "وردپرس",
+      id: "Wordpress",
+      title: "Wordpress",
     },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case "جاوا اسکریپت":
+      case  "JavaScript":
         setData(javascript);
         break;
-      case "ری اکت":
+      case "ReactJs":
         setData(reactJs);
         break;
       case "HTML & CSS":
@@ -63,16 +63,16 @@ const Skills = () => {
       case "CSS Libraries":
         setData(CssLibraries);
         break;
-      case "تایپ اسکریپت":
+      case "TypeScript":
         setData(TypeScript);
         break;
       case "AJAX":
         setData(AJAX);
         break;
-      case "ابزارها":
+      case "Tools":
         setData(Tools);
         break;
-      case "وردپرس":
+      case "Wordpress":
         setData(WordPress);
         break;
       default:
@@ -111,5 +111,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-// نمونه کارها
