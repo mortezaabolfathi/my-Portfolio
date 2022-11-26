@@ -3,7 +3,7 @@ import "./certificate.scss"
 const TestiMonials = () => {
     return ( 
         <div className="certificate" id="certificate">
-            <h1>مدارکات اخذ شده</h1>
+            <h1>مدارک اخذ شده</h1>
                 <div className="container">
                     <div className="right">
                         <img src="assets/Certificate_maktabSharif.jpg" alt="" />
