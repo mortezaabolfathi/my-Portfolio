@@ -50,6 +50,6 @@ export const Tools = [
 export const WordPress = [
   {
     id: 1,
-    description:" توانایی راه اندازی هرگونه وب سایت وردپرسی و ارتباط با دایرکت ادمین و همچنین سی پنل "
+    description:"Ability to create any WordPress website, including custom template writing"
   },
 ];

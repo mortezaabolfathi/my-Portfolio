@@ -32,9 +32,9 @@
 
       img {
         height: 82%;
-        position: absolute;
+        position: sticky;
         left: 0px;
-        bottom: 7rem;
+        bottom: 0px;
 
         @include mobile{
           height: 35%;
